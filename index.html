@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EuroHeadshot AI | Professional AI Headshot in 24h</title>
+  <meta name="description" content="Professional AI headshots for the UK. Studio-quality portrait delivered in 24 hours. Secure EUR payment. Delivered via WhatsApp." />
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#121a2a;
+      --text:#eef2ff;
+      --muted:#b9c2d3;
+      --line:#22304c;
+      --accent:#22c55e;
+      --accent2:#4f8cff;
+      --radius:16px;
+      --max:1040px;
+      --shadow: 0 16px 50px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(79,140,255,.16), transparent 50%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(34,197,94,.12), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    .wrap{max-width:var(--max);margin:auto;padding:24px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brandWrap{display:flex;align-items:center;gap:10px}
+    .logo{
+      width:34px;height:34px;border-radius:10px;
+      background: linear-gradient(135deg, rgba(79,140,255,.9), rgba(34,197,94,.85));
+      box-shadow: 0 10px 30px rgba(79,140,255,.25);
+    }
+    .brand{font-weight:800;font-size:18px}
+    .tagline{font-size:12px;color:var(--muted);margin-top:2px}
+    .badge{
+      font-size:12px;color:var(--muted);
+      border:1px solid var(--line); padding:6px 10px; border-radius:999px;
+      background: rgba(18,26,42,.55);
+      white-space:nowrap;
+    }
+    .hero{display:grid;grid-template-columns: 1.05fr .95fr;gap:22px;align-items:start;margin-top:18px}
+    @media (max-width: 920px){ .hero{grid-template-columns:1fr} }
+    h1{font-size:42px;margin:18px 0 10px;line-height:1.08}
+    @media (max-width: 520px){ h1{font-size:34px} }
+    p.sub{color:var(--muted);font-size:18px;margin:0 0 16px}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 16px;border-radius:12px;text-decoration:none;font-weight:700;
+      border:1px solid transparent;box-shadow: var(--shadow);
+      min-width: 210px;
+    }
+    .primary{background:var(--accent);color:#08140c}
+    .secondary{background: rgba(18,26,42,.55);border-color:var(--line);color:var(--text)}
+    .mini{margin-top:10px;color:var(--muted);font-size:13px}
+    .card{
+      background: rgba(18,26,42,.62);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:16px;
+    }
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width: 520px){ .grid2{grid-template-columns:1fr} }
+    .img{
+      width:100%;height:280px;object-fit:cover;
+      border-radius:14px;border:1px solid rgba(185,194,211,.22);
+      background: rgba(11,15,23,.35);
+    }
+    .cap{color:var(--muted);font-size:12px;margin-top:6px}
+    .section{margin-top:20px}
+    .section h2{margin:0 0 10px;font-size:24px}
+    .muted{color:var(--muted)}
+    .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+    @media (max-width: 920px){ .trust{grid-template-columns:1fr 1fr} }
+    .pill{
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding:12px 12px;
+      background: rgba(18,26,42,.45);
+      color: rgba(238,242,255,.95);
+      font-size:13px;
+    }
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width: 920px){ .how{grid-template-columns:1fr} }
+    .kicker{font-size:12px;color:rgba(185,194,211,.85);text-transform:uppercase;letter-spacing:.12em}
+    .b{display:block;font-weight:800;margin-top:6px}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width: 920px){ .pricing{grid-template-columns:1fr} }
+    .plan{position:relative}
+    .best{
+      border-color: rgba(79,140,255,.55);
+      background: linear-gradient(180deg, rgba(79,140,255,.12), rgba(18,26,42,.62));
+    }
+    .chip{
+      position:absolute;top:12px;right:12px;
+      background: rgba(79,140,255,.92);
+      color:#071226;font-weight:900;font-size:12px;
+      padding:6px 10px;border-radius:999px;
+    }
+    .price{font-size:34px;font-weight:900;margin:10px 0 6px}
+    ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+    li{margin:6px 0}
+    .btnFull{width:100%;min-width:auto;margin-top:12px}
+    .samples{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width: 920px){ .samples{grid-template-columns:1fr} }
+    .testi{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    @media (max-width: 920px){ .testi{grid-template-columns:1fr} }
+    .quote{font-size:14px;color: rgba(238,242,255,.95)}
+    .who{margin-top:8px;color:var(--muted);font-size:12px}
+    details{
+      padding:14px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(18,26,42,.45);
+    }
+    summary{cursor:pointer;font-weight:800}
+    details p{color:var(--muted);margin:10px 0 0}
+    footer{
+      margin-top:26px;
+      padding-top:18px;
+      border-top:1px solid rgba(34,48,76,.7);
+      font-size:12px;
+      color:rgba(185,194,211,.85);
+    }
+    .notice{
+      margin-top:12px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(79,140,255,.25);
+      background: rgba(79,140,255,.06);
+      color: rgba(238,242,255,.92);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brandWrap">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="brand">EuroHeadshot AI</div>
+          <div class="tagline">AI Professional Headshots for the United Kingdom</div>
+        </div>
+      </div>
+      <div class="badge">Secure EUR payments • Delivery in 24h • WhatsApp support</div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <h1>From selfie to professional headshot in 24 hours.</h1>
+        <p class="sub">
+          Studio-quality AI portrait for LinkedIn and corporate profiles.
+          Send one clear selfie, pay securely in EUR, receive your image on WhatsApp.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="https://wa.me/5511971050531?text=Hi%20I%20want%20a%20professional%20AI%20headshot.%20How%20do%20I%20start%3F" target="_blank" rel="noopener">
+            Start on WhatsApp
+          </a>
+          <a class="btn secondary" href="#pricing">See pricing</a>
+        </div>
+
+        <div class="trust">
+          <div class="pill"><span class="kicker">Payment</span><span class="b">Stripe (EUR)</span></div>
+          <div class="pill"><span class="kicker">Delivery</span><span class="b">Within 24 hours</span></div>
+          <div class="pill"><span class="kicker">Input</span><span class="b">1 clear selfie</span></div>
+          <div class="pill"><span class="kicker">Support</span><span class="b">WhatsApp only</span></div>
+        </div>
+
+        <div class="notice">
+          Minor revisions are included per package (lighting, background tone, expression, outfit tone).
+          Major changes (new theme/style) may require a new order.
+        </div>
+
+        <div class="mini">
+          Best results: good lighting, face visible, no sunglasses, no heavy filters, no group photos.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="kicker">Proof</div>
+        <div class="b" style="margin-top:4px;">Before / After example</div>
+        <div style="height:10px"></div>
+
+        <div class="grid2">
+          <div>
+            <img class="img" src="assets-before.jpg" alt="Before selfie example" />
+            <div class="cap">Before (selfie)</div>
+          </div>
+          <div>
+            <img class="img" src="assets-after.jpg" alt="After professional headshot example" />
+            <div class="cap">After (professional headshot)</div>
+          </div>
+        </div>
+
+        <div class="cap" style="margin-top:10px;">
+          Replace these images with your real examples. This section is the #1 conversion driver.
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="how">
+      <h2>How it works</h2>
+      <div class="how">
+        <div class="card">
+          <div class="kicker">Step 1</div>
+          <div class="b">Send your selfie</div>
+          <div class="muted">Message us on WhatsApp and upload 1 clear selfie.</div>
+        </div>
+        <div class="card">
+          <div class="kicker">Step 2</div>
+          <div class="b">Secure EUR payment</div>
+          <div class="muted">We send a Stripe payment link in euros.</div>
+        </div>
+        <div class="card">
+          <div class="kicker">Step 3</div>
+          <div class="b">Receive your headshot</div>
+          <div class="muted">Delivered on WhatsApp within 24 hours (often sooner).</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="samples">
+      <h2>Delivery samples</h2>
+      <div class="muted">These are examples of what you can expect (style and quality).</div>
+
+      <div class="samples">
+        <div class="card">
+          <img class="img" src="assets-sample1.jpg" alt="Sample headshot 1" />
+          <div class="cap"><b>Corporate Neutral</b> • Clean background • LinkedIn-ready</div>
+        </div>
+        <div class="card">
+          <img class="img" src="assets-sample2.jpg" alt="Sample headshot 2" />
+          <div class="cap"><b>Modern Office</b> • Professional environment • Natural lighting</div>
+        </div>
+        <div class="card">
+          <img class="img" src="assets-sample3.jpg" alt="Sample headshot 3" />
+          <div class="cap"><b>Executive Studio</b> • Premium look • Studio lighting</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="pricing">
+      <h2>Pricing</h2>
+      <div class="muted">Choose a package. All include a professional corporate look.</div>
+
+      <div class="pricing">
+
+        <div class="card plan">
+          <div class="kicker">Essential</div>
+          <div class="price">€19</div>
+          <div class="muted">Best for quick LinkedIn upgrade</div>
+          <ul>
+            <li><b>Delivery:</b> 1 final image</li>
+            <li><b>Included:</b> 1 minor revision</li>
+            <li><b>Look:</b> corporate studio style</li>
+            <li><b>Background:</b> neutral or office</li>
+          </ul>
+          <a class="btn secondary btnFull" href="STRIPE_LINK_ESSENTIAL" target="_blank" rel="noopener">Pay €19 (EUR)</a>
+          <a class="btn primary btnFull" href="https://wa.me/5511971050531?text=Hi%20I%20want%20the%20Essential%20package%20(%E2%82%AC19).%20Here%20is%20my%20selfie%3A" target="_blank" rel="noopener">Send selfie on WhatsApp</a>
+        </div>
+
+        <div class="card plan best">
+          <div class="chip">Most popular</div>
+          <div class="kicker">Professional</div>
+          <div class="price">€39</div>
+          <div class="muted">Most people choose this</div>
+          <ul>
+            <li><b>Delivery:</b> 3 variations to choose from</li>
+            <li><b>Included:</b> 1 minor revision</li>
+            <li><b>Styles:</b> corporate + modern</li>
+            <li><b>Priority:</b> faster processing</li>
+          </ul>
+          <a class="btn secondary btnFull" href="STRIPE_LINK_PRO" target="_blank" rel="noopener">Pay €39 (EUR)</a>
+          <a class="btn primary btnFull" href="https://wa.me/5511971050531?text=Hi%20I%20want%20the%20Professional%20package%20(%E2%82%AC39).%20Here%20is%20my%20selfie%3A" target="_blank" rel="noopener">Send selfie on WhatsApp</a>
+        </div>
+
+        <div class="card plan">
+          <div class="kicker">Executive</div>
+          <div class="price">€79</div>
+          <div class="muted">Premium set for executives and founders</div>
+          <ul>
+            <li><b>Delivery:</b> 8 variations</li>
+            <li><b>Included:</b> 2 minor revisions</li>
+            <li><b>Styles:</b> 3 high-end looks</li>
+            <li><b>Best for:</b> leadership profiles</li>
+          </ul>
+          <a class="btn secondary btnFull" href="STRIPE_LINK_EXEC" target="_blank" rel="noopener">Pay €79 (EUR)</a>
+          <a class="btn primary btnFull" href="https://wa.me/5511971050531?text=Hi%20I%20want%20the%20Executive%20package%20(%E2%82%AC79).%20Here%20is%20my%20selfie%3A" target="_blank" rel="noopener">Send selfie on WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section" id="testimonials">
+      <h2>Client feedback</h2>
+      <div class="muted">Replace these with real messages after your first sales.</div>
+
+      <div class="testi">
+        <div class="card">
+          <div class="quote">“Looks like a real studio photo. Used it on LinkedIn the same day.”</div>
+          <div class="who">UK • Marketing</div>
+        </div>
+        <div class="card">
+          <div class="quote">“Fast delivery and the result is very professional.”</div>
+          <div class="who">UK • Tech</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="faq">
+      <h2>FAQ</h2>
+
+      <div class="grid2" style="margin-top:12px;">
+        <details>
+          <summary>What selfie should I send?</summary>
+          <p>Use a clear selfie with good lighting, no sunglasses, no heavy filters, and your face fully visible. Avoid group photos.</p>
+        </details>
+
+        <details>
+          <summary>What is a minor revision?</summary>
+          <p>Minor revisions include background tone, lighting adjustments, slightly different expression, or outfit tone. Major changes (new theme/style) require a new order.</p>
+        </details>
+
+        <details>
+          <summary>How do I receive the final image?</summary>
+          <p>We deliver directly on WhatsApp as a high-resolution image. If your package includes multiple variations, we send them together.</p>
+        </details>
+
+        <details>
+          <summary>Can you guarantee an identical face match?</summary>
+          <p>We aim for a strong resemblance, but AI can introduce small variations. We reduce this by using a clear selfie and professional parameters.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="section" id="cta">
+      <div class="card">
+        <h2 style="margin:0 0 8px;">Ready to upgrade your profile photo?</h2>
+        <div class="muted">Message us now. Send one selfie. Get your professional headshot delivered on WhatsApp.</div>
+        <div class="ctaRow">
+          <a class="btn primary" href="https://wa.me/5511971050531?text=Hi%20I%20want%20a%20professional%20AI%20headshot.%20Please%20send%20me%20the%20steps." target="_blank" rel="noopener">Start on WhatsApp</a>
+          <a class="btn secondary" href="#pricing">See pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div><b>EuroHeadshot AI</b> — AI-generated professional portraits for the United Kingdom.</div>
+      <div style="margin-top:6px;">Payments are processed securely via Stripe in EUR. Delivery via WhatsApp.</div>
+    </footer>
+  </div>
+</body>
+</html>
